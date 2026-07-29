@@ -1,0 +1,12 @@
+name: skills
+title: skills
+username: bradduthie
+account: bradduthie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17613829
+bundleId: 12271789
+url: https://bradduthie.shinyapps.io/skills/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

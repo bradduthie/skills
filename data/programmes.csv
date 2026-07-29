@@ -1,0 +1,49 @@
+"programme_label","degree","pathway","year","semester","module_code","module_name","status","collection","has_skills"
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","1","Autumn","BIOU1IE","Ecology: An Introduction","compulsory","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","1","Autumn","SCIU1FI","Fundamentals for scientific inquiry","compulsory","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","1","Autumn","ANYFBI1","Optional module","optional","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","1","Spring","BIOU2PH","Introduction to Physiology","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","1","Spring","BIOU2CE","Cells, the building blocks of life","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","1","Spring","ANYSE2","Optional module","optional","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","2","Autumn","BIOU3GE","Evolution and Genetics","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","2","Autumn","SCIU3FB","Practical Field Biology","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","2","Autumn","SCIU3LS","Lab Essentials for Physical and Life Sciences","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","2","Spring","BIOU4BD","Biodiversity","compulsory","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","2","Spring","SCIU4T4","Statistical Techniques","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","2","Spring","ANYSE4","Optional module","optional","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","3","Autumn","BIOFELH","Optional Biology Module","optional","BIOFELH",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","3","Autumn","BIOFELH","Optional Biology Module","optional","BIOFELH",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","3","Autumn","BIOU9PC","Population and Community Ecology","pathway","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","3","Spring","BIOU6PE","Plant Ecology","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","3","Spring","BIOFELH","Optional Biology Module","optional","BIOFELH",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","3","Spring","ENVU9BC","Biodiversity Conservation and Management","pathway","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","4","Autumn","SCIU9PS","Biological and Environmental Sciences Honours Project Start","compulsory","",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","4","Autumn","BIOFSE7","Optional Biology Module","optional","BIOFSE7",FALSE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","4","Autumn","ENVU9WM","Sustainable Water Management","pathway","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","4","Spring","SCIU9PR","Biological and Environmental Sciences Honours Project","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","4","Spring","SCIU9PR","Biological and Environmental Sciences Honours Project","compulsory","",TRUE
+"Biology — Biodiversity and Sustainability","Biology","Biodiversity and Sustainability","4","Spring","BIOFSE8","Optional Biology Module","optional","BIOFSE8",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","1","Autumn","BIOU1IE","Ecology: An Introduction","compulsory","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","1","Autumn","SCIU1FI","Fundamentals for scientific inquiry","compulsory","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","1","Autumn","ANYFBI1","Optional module","optional","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","1","Spring","BIOU2PH","Introduction to Physiology","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","1","Spring","BIOU2CE","Cells, the building blocks of life","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","1","Spring","ANYSE2","Optional module","optional","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","2","Autumn","BIOU3GE","Evolution and Genetics","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","2","Autumn","SCIU3FB","Practical Field Biology","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","2","Autumn","SCIU3LS","Lab Essentials for Physical and Life Sciences","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","2","Spring","BIOU4BD","Biodiversity","compulsory","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","2","Spring","SCIU4T4","Statistical Techniques","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","2","Spring","ANYSE4","Optional module","optional","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","3","Autumn","BIOFELH","Optional Biology Module","optional","BIOFELH",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","3","Autumn","BIOFELH","Optional Biology Module","optional","BIOFELH",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","3","Autumn","SCIU7SR","Statistics Using R","pathway","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","3","Spring","BIOU6PE","Plant Ecology","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","3","Spring","BIOFELH","Optional Biology Module","optional","BIOFELH",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","3","Spring","BIOU9IN","Infectious Disease","pathway","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","4","Autumn","SCIU9PS","Biological and Environmental Sciences Honours Project Start","compulsory","",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","4","Autumn","BIOFSE7","Optional Biology Module","optional","BIOFSE7",FALSE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","4","Autumn","BIOU7SB","Phylogenetics, Bioinformatics and Omics","pathway","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","4","Spring","SCIU9PR","Biological and Environmental Sciences Honours Project","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","4","Spring","SCIU9PR","Biological and Environmental Sciences Honours Project","compulsory","",TRUE
+"Biology — Data Analysis and Biostatistics","Biology","Data Analysis and Biostatistics","4","Spring","BIOFSE8","Optional Biology Module","optional","BIOFSE8",FALSE
