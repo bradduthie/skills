@@ -1176,9 +1176,13 @@ server <- function(input, output, session) {
                                STATUS_COLS[["optional"]], "; background: #f8f9fa; border-radius: 0 4px 4px 0;"),
                 selectizeInput(input_id, NULL,
                                choices = choice_vals,
-                               selected = NULL,
+                               selected = character(0),
                                multiple = FALSE,
-                               options = list(placeholder = "Select optional module...", maxItems = 1))
+                               options = list(
+                                 placeholder = "Select optional module...",
+                                 maxItems = 1,
+                                 onInitialize = I('function() { this.setValue(""); }')
+                               ))
               )
             }
           } else {
