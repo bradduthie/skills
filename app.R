@@ -9,11 +9,10 @@
 #   3. Programme Skills Map       (year grid + skills trajectory)
 #
 # Data files (in data/):
-#   programmes.csv   — flat programme structure (one row per module slot)
-#   skills.csv       — module skills in tidy/long format
-#   competencies.csv — UN competency levels per (programme, module)
-#   topics.csv       — module topic tags
-#   meta/collection_*.csv — collection module pools
+#   programmes.csv      — flat programme structure (one row per module slot)
+#   module_skills.csv   — module skills + metadata in tidy/long format
+#   module_topics.csv   — module topic tags
+#   collections.csv     — collection module pools
 #
 # Local:   shiny::runApp("app.R")
 # Deploy:  rsconnect::deployApp("app.R")
@@ -21,7 +20,6 @@
 
 library(shiny)
 library(bslib)
-library(jsonlite)
 
 # ---------------------------------------------------------------------------
 # DATA LOADING
@@ -46,11 +44,10 @@ read_csv <- function(name) {
 }
 
 programmes_csv    <- read_csv("programmes.csv")
-skills_csv        <- read_csv("skills.csv")
-competencies_csv  <- read_csv("competencies.csv")
-topics_csv        <- read_csv("topics.csv")
+skills_csv        <- read_csv("module_skills.csv")
+module_topics_csv <- read_csv("module_topics.csv")
 
-# Also load radial_data.csv for backward compat
+# Also load radial_data.csv (pre-computed UN competency wheel data)
 radial_csv <- NULL
 tryCatch({
   rf <- file.path(app_dir, "radial_data.csv")
@@ -59,38 +56,21 @@ tryCatch({
 if (is.null(radial_csv) && file.exists(file.path(data_dir, "..", "radial_data.csv"))) {
   radial_csv <- read.csv(file.path(data_dir, "..", "radial_data.csv"), stringsAsFactors = FALSE)
 }
-if (is.null(radial_csv)) radial_csv <- competencies_csv
 
-# Load full module JSON for topics, systems_thinking, free_text, coordinator info
-skills_json <- NULL
-tryCatch({
-  sjf <- file.path(data_dir, "skills_data.json")
-  if (file.exists(sjf)) {
-    skills_json <- fromJSON(paste(readLines(sjf, warn = FALSE), collapse = "\n"),
-                            simplifyVector = FALSE)$modules
-  }
-}, error = function(e) {})
-if (is.null(skills_json)) skills_json <- list()
-
-# Build module_code -> module metadata lookup (from JSON)
+# Build module_code -> module metadata lookup (from module_skills.csv)
 module_meta <- list()
-for (m in skills_json) {
-  codes <- trimws(strsplit(m$code, " and ")[[1]])
-  for (c in codes) {
-    module_meta[[c]] <- list(
-      name          = m$name,
-      coordinator   = m$coordinator,
-      year          = m$year,
-      semester      = m$semester,
-      computational = m$computational,
-      field         = m$field,
-      lab           = m$lab,
-      personal      = m$personal,
-      topics        = m$topics,
-      systems_thinking = m$systems_thinking,
-      free_text     = m$free_text
-    )
-  }
+unique_mods <- unique(skills_csv[, c("module_code", "module_name", "coordinator", "year", "semester")])
+for (i in seq_len(nrow(unique_mods))) {
+  r <- unique_mods[i, ]
+  mc <- r$module_code
+  mod_topics <- module_topics_csv$topic[module_topics_csv$module_code == mc]
+  module_meta[[mc]] <- list(
+    name        = r$module_name,
+    coordinator = r$coordinator,
+    year        = as.integer(r$year),
+    semester    = as.integer(r$semester),
+    topics      = mod_topics
+  )
 }
 
 # Build skills_lookup: module_code -> list of skill category -> named vector
@@ -621,24 +601,18 @@ build_virtual_programme <- function(degree) {
 # ---------------------------------------------------------------------------
 # LOAD COLLECTIONS
 # ---------------------------------------------------------------------------
-load_collections <- function() {
-  meta_dir <- file.path(data_dir, "meta")
-  coll_files <- list.files(meta_dir, pattern = "^collection_.*\\.csv$", full.names = TRUE)
-  colls <- list()
-  for (f in coll_files) {
-    coll_name <- sub("^collection_(.*)\\.csv$", "\\1", basename(f))
-    coll_data <- read.csv(f, stringsAsFactors = FALSE)
-    colls[[coll_name]] <- lapply(seq_len(nrow(coll_data)), function(i) {
-      list(
-        code       = coll_data$module_code[i],
-        name       = coll_data$module_name[i],
-        has_skills = tolower(as.character(coll_data$has_skills[i])) == "true"
-      )
-    })
-  }
-  colls
+collections_data <- read_csv("collections.csv")
+collections <- list()
+for (coll_name in unique(collections_data$collection)) {
+  sub <- collections_data[collections_data$collection == coll_name, ]
+  collections[[coll_name]] <- lapply(seq_len(nrow(sub)), function(i) {
+    list(
+      code       = sub$module_code[i],
+      name       = sub$module_name[i],
+      has_skills = tolower(as.character(sub$has_skills[i])) == "true"
+    )
+  })
 }
-collections <- load_collections()
 
 # ---------------------------------------------------------------------------
 # UI

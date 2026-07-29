@@ -1,0 +1,29 @@
+collection,module_code,module_name,has_skills
+BIOFELH,AQUU6MB,Changing Oceans,false
+BIOFELH,BIOU5MB,Microbiology,true
+BIOFELH,BIOU6AC,The Animal Cell,true
+BIOFELH,BIOU6BE,Behavioural Ecology,true
+BIOFELH,BIOU9AP,Animal Physiology,true
+BIOFELH,BIOU9IN,Infectious Disease,false
+BIOFELH,BIOU9PC,Population and Community Ecology,true
+BIOFELH,ENVU5EP,Environmental Policy in a Changing World,true
+BIOFELH,ENVU9BC,Biodiversity Conservation and Management,false
+BIOFELH,ENVU9FC,International Field Course,true
+BIOFELH,SCIU7SR,Statistics Using R,true
+BIOFSE7,BIOU9SX,Evolutionary Consequences of Sexual Reproduction,true
+BIOFSE7,ENVU7CP,Conservation Placement,true
+BIOFSE7,BIOU7CM,Biological Control Mechanisms,true
+BIOFSE7,BIOU7FC,Biology Field Course,true
+BIOFSE7,BIOU7SB,"Phylogenetics, Bioinformatics and Omics",true
+BIOFSE7,BIOU9PC,Population and Community Ecology,true
+BIOFSE7,BIOU9TM,Molecular Techniques,true
+BIOFSE7,ENVU9WM,Sustainable Water Management,true
+BIOFSE7,GEOU9SP,Geographical Information Systems,true
+BIOFSE7,SCIU7SR,Statistics Using R,true
+BIOFSE8,AQUU6MB,Changing Oceans,false
+BIOFSE8,BIOU6AC,The Animal Cell,true
+BIOFSE8,BIOU6BE,Behavioural Ecology,true
+BIOFSE8,BIOU7CM,Biological Control Mechanisms,true
+BIOFSE8,BIOU8FC,Biology Field Course,true
+BIOFSE8,BIOU9IN,Infectious Disease,false
+BIOFSE8,ENVU9BC,Biodiversity Conservation and Management,false
