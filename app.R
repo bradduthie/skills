@@ -554,39 +554,45 @@ build_virtual_programme <- function(degree) {
       }
     }
 
+    opt_per_pl <- list()
+    for (i in seq_len(nrow(optional))) {
+      r <- optional[i, ]
+      key <- paste(r$year, r$semester, r$module_code, r$module_name, r$collection)
+      pl <- as.character(r$programme_label)
+      if (is.null(opt_per_pl[[key]])) opt_per_pl[[key]] <- list()
+      cnt <- opt_per_pl[[key]][[pl]]
+      opt_per_pl[[key]][[pl]] <- (if (is.null(cnt)) 0 else cnt) + 1
+    }
     seen_opt <- character(0)
     for (i in seq_len(nrow(optional))) {
       r <- optional[i, ]
       key <- paste(r$year, r$semester, r$module_code, r$module_name, r$collection)
       if (!(key %in% seen_opt)) {
         seen_opt <- c(seen_opt, key)
-        result[[length(result) + 1]] <- r
+        n <- max(unlist(opt_per_pl[[key]]))
+        for (j in seq_len(n)) {
+          result[[length(result) + 1]] <- r
+        }
       }
     }
 
     if (nrow(pathway) > 0) {
       vc_name <- paste0("_VD_", gsub("[^A-Za-z0-9]", "_", degree), "_Y", yr,
                         ifelse(sem == "Autumn", "A", "S"))
-      vc_entry <- list(
-        code       = vc_name,
-        name       = "Pathway option",
-        has_skills = FALSE
-      )
       vc_mods <- list()
       for (i in seq_len(nrow(pathway))) {
         r <- pathway[i, ]
         mc <- r$module_code
         hs <- tolower(as.character(r$has_skills)) == "true"
         vc_mods[[length(vc_mods) + 1]] <- list(code = mc, name = r$module_name, has_skills = hs)
-        # Also add the pathway module itself to result using a distinct entry
-        r2 <- r
-        r2$status <- "optional"
-        r2$collection <- vc_name
-        r2$has_skills <- FALSE
-        r2$module_name <- "Pathway option"
-        r2$module_code <- vc_name
-        result[[length(result) + 1]] <- r2
       }
+      r2 <- pathway[1, ]
+      r2$status <- "optional"
+      r2$collection <- vc_name
+      r2$has_skills <- FALSE
+      r2$module_name <- "Pathway option"
+      r2$module_code <- vc_name
+      result[[length(result) + 1]] <- r2
       vc_list[[vc_name]] <- vc_mods
     }
   }
@@ -1120,6 +1126,14 @@ server <- function(input, output, session) {
 
       make_semester_col <- function(mods, period) {
         if (is.null(mods)) return(NULL)
+
+        status_priority <- c(compulsory = 0, pathway = 1, optional = 2)
+        mods <- mods[order(sapply(mods, function(m) {
+          p <- status_priority[[as.character(m$status)]]
+          if (is.null(p)) 99 else p
+        }))]
+
+        coll_seen <- list()
         items <- lapply(mods, function(m) {
           is_any <- grepl("^ANY", m$module_code)
           is_coll <- nchar(trimws(m$collection)) > 0
@@ -1134,20 +1148,27 @@ server <- function(input, output, session) {
           } else if (is_coll) {
             coll_code <- m$collection
             key <- semester_key(yr, period)
-            input_id <- paste0("opt_", key, "_", coll_code)
-
-            coll_modules <- collections_all()[[coll_code]]
-            has_skills_opts <- if (!is.null(coll_modules)) {
-              coll_modules[sapply(coll_modules, function(cm) cm$has_skills)]
+            cnt <- coll_seen[[coll_code]]
+            if (is.null(cnt)) {
+              coll_seen[[coll_code]] <- 1
+              input_id <- paste0("opt_", key, "_", coll_code)
             } else {
-              list()
+              coll_seen[[coll_code]] <- cnt + 1
+              input_id <- paste0("opt_", key, "_", coll_code, "_", cnt + 1)
             }
 
-            if (length(has_skills_opts) > 0) {
-              choice_names <- sapply(has_skills_opts, function(cm) {
+            coll_modules <- collections_all()[[coll_code]]
+
+            if (is.null(coll_modules) || length(coll_modules) == 0) {
+              div(
+                style = "padding: 4px 8px; margin-bottom: 3px; border-left: 4px solid #ccc;",
+                "No modules available"
+              )
+            } else {
+              choice_names <- sapply(coll_modules, function(cm) {
                 paste0(cm$name, " (", cm$code, ")")
               })
-              choice_vals <- sapply(has_skills_opts, function(cm) cm$code)
+              choice_vals <- sapply(coll_modules, function(cm) cm$code)
               names(choice_vals) <- choice_names
 
               div(
@@ -1158,11 +1179,6 @@ server <- function(input, output, session) {
                                selected = NULL,
                                multiple = FALSE,
                                options = list(placeholder = "Select optional module...", maxItems = 1))
-              )
-            } else {
-              div(
-                style = "padding: 4px 8px; margin-bottom: 3px; border-left: 4px solid #ccc;",
-                "No modules available"
               )
             }
           } else {
