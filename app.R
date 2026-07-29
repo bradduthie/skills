@@ -577,23 +577,10 @@ build_virtual_programme <- function(degree) {
     }
 
     if (nrow(pathway) > 0) {
-      vc_name <- paste0("_VD_", gsub("[^A-Za-z0-9]", "_", degree), "_Y", yr,
-                        ifelse(sem == "Autumn", "A", "S"))
-      vc_mods <- list()
-      for (i in seq_len(nrow(pathway))) {
-        r <- pathway[i, ]
-        mc <- r$module_code
-        hs <- tolower(as.character(r$has_skills)) == "true"
-        vc_mods[[length(vc_mods) + 1]] <- list(code = mc, name = r$module_name, has_skills = hs)
+      coll_rows <- optional[nchar(trimws(optional$collection)) > 0, , drop = FALSE]
+      if (nrow(coll_rows) > 0) {
+        result[[length(result) + 1]] <- coll_rows[1, ]
       }
-      r2 <- pathway[1, ]
-      r2$status <- "optional"
-      r2$collection <- vc_name
-      r2$has_skills <- FALSE
-      r2$module_name <- "Pathway option"
-      r2$module_code <- vc_name
-      result[[length(result) + 1]] <- r2
-      vc_list[[vc_name]] <- vc_mods
     }
   }
 
@@ -615,7 +602,8 @@ for (coll_name in unique(collections_data$collection)) {
     list(
       code       = sub$module_code[i],
       name       = sub$module_name[i],
-      has_skills = tolower(as.character(sub$has_skills[i])) == "true"
+      has_skills = tolower(as.character(sub$has_skills[i])) == "true",
+      semester   = as.character(sub$semester[i])
     )
   })
 }
@@ -685,6 +673,7 @@ ui <- page_fillable(
   # ---- SECTION 3: Programme Skills Map ----
   h4("Programme Skills Map", style = "margin: 0 0 12px 0; font-weight: 700; color: #156082;"),
   uiOutput("module_grid"),
+  uiOutput("dup_warning"),
   div(
     style = "margin-top: 8px; margin-bottom: 8px;",
     radioButtons("view_mode", NULL,
@@ -1158,6 +1147,10 @@ server <- function(input, output, session) {
             }
 
             coll_modules <- collections_all()[[coll_code]]
+            coll_modules <- Filter(function(cm) {
+              s <- cm$semester
+              is.na(s) || s == "" || grepl(period, s, fixed = TRUE)
+            }, coll_modules)
 
             if (is.null(coll_modules) || length(coll_modules) == 0) {
               div(
@@ -1246,6 +1239,42 @@ server <- function(input, output, session) {
       legend,
       div(style = "display: flex; gap: 12px; flex-wrap: wrap;", year_divs)
     )
+  })
+
+  # Duplicate Module Warning
+  warning_state <- reactiveVal(NULL)
+
+  observeEvent(reactiveValuesToList(input), {
+    req(nrow(current_programme()) > 0)
+
+    all_vals <- reactiveValuesToList(input)
+    opt_vals <- all_vals[grepl("^opt_", names(all_vals))]
+    selected <- unlist(opt_vals)
+    selected <- selected[nchar(trimws(selected)) > 0]
+
+    if (length(selected) < 2) { warning_state(NULL); return() }
+    dup <- unique(selected[duplicated(selected)])
+    if (length(dup) == 0) { warning_state(NULL); return() }
+
+    coll_all <- collections_all()
+    find_name <- function(code) {
+      for (coll in coll_all) for (m in coll) if (m$code == code) return(m$name)
+      code
+    }
+    dup_names <- sapply(dup, find_name)
+
+    warning_state(div(
+      style = "padding: 8px 12px; margin: 8px 0; background: #f8d7da;
+               border: 1px solid #f5c6cb; border-radius: 4px;
+               color: #721c24; font-size: 0.85rem;",
+      tags$strong("Warning:"),
+      " You selected ", paste0("\u201C", dup_names, "\u201D", collapse = ", "),
+      " in multiple slots. Please choose different modules."
+    ))
+  })
+
+  output$dup_warning <- renderUI({
+    warning_state()
   })
 
   # Skills Trajectory
