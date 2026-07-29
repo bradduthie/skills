@@ -994,7 +994,8 @@ server <- function(input, output, session) {
 
       return(div(
         h4(label, style = "margin: 0 0 6px 0; font-weight: 700; color: #156082;"),
-        p(paste0(length(skill_items), if (nzchar(sel_skill)) " skill shown" else " skills in this area"),
+        p(if (length(skill_items) == 0) "No skills available"
+          else paste0(length(skill_items), if (nzchar(sel_skill)) " skill shown" else " skills in this area"),
           style = "font-size: 0.85rem; color: #555; margin-bottom: 8px;"),
         hr(style = "margin: 8px 0;"),
         do.call(tagList, skill_items)
