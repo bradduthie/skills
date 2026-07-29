@@ -623,11 +623,9 @@ ui <- page_fillable(
                    base_font = "'Inter', sans-serif", "font-size-base" = "0.9rem"),
   fill = FALSE,
 
-  # ---- SECTION 1: UN Competency Skills Wheel ----
-  div(style = "background: #156082; color: white; padding: 12px 24px; margin-bottom: 16px; border-radius: 6px;",
-      h3("UN Competency Skills Wheel", style = "margin: 0; font-weight: 600;"),
-      p("Skills Development Survey \u2014 University of Stirling",
-        style = "margin: 4px 0 0 0; opacity: 0.85; font-size: 0.9rem;")
+  # ---- SECTION 1: Competency Skills Wheel ----
+  div(style = "background: #006838; color: white; padding: 12px 24px; margin-bottom: 16px; border-radius: 6px;",
+      h3("Competency Skills Wheel", style = "margin: 0; font-weight: 600;")
   ),
 
   div(
