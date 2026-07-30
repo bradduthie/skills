@@ -25,3 +25,28 @@ BIOFSE8,BIOU6BE,Behavioural Ecology,true,Spring
 BIOFSE8,BIOU8FC,Biology Field Course,true,Spring
 BIOFSE8,BIOU9IN,Infectious Disease,false,Spring
 BIOFSE8,ENVU9BC,Biodiversity Conservation and Management,false,Spring
+BIOFEL2,BIOU5MB,Microbiology,TRUE,Autumn
+BIOFEL2,BIOU9PC,Population and Community Ecology,TRUE,Autumn
+BIOFEL2,ENVU5EP,Environmental Policy in a Changing World,TRUE,Autumn
+BIOFEL2,SCIU7SR,Statistics Using R,TRUE,Autumn
+BIOFEL5,AQUU6MB,Changing Oceans,FALSE,Spring
+BIOFEL5,BIOU6PE,Plant Ecology,TRUE,Spring
+BIOFEL5,BIOU9IN,Infectious Disease,FALSE,Spring
+BIOFEL5,ENVU9BC,Biodiversity Conservation and Management,FALSE,Spring
+BIOFEL5,ENVU9FC,International Field Course,TRUE,Spring
+ABIFSE7,AQUU7MM,Marine Mammals Field Course,FALSE,Autumn
+ABIFSE7,BIOU7CM,Biological Control Mechanisms,TRUE,Autumn
+ABIFSE7,BIOU7FC,Biology Field Course,TRUE,Autumn
+ABIFSE7,BIOU7SB,"Phylogenetics, Bioinformatics and Omics",TRUE,Autumn
+ABIFSE7,BIOU9PC,Population and Community Ecology,TRUE,Autumn
+ABIFSE7,BIOU9SX,Evolutionary Consequences of Sexual Reproduction,TRUE,Autumn
+ABIFSE7,BIOU9TM,Molecular Techniques,TRUE,Autumn
+ABIFSE7,ENVU7CP,Conservation Placement,TRUE,Autumn
+ABIFSE7,ENVU9WM,Sustainable Water Management,TRUE,Autumn
+ABIFSE7,GEOU9SP,Geographical Information Systems,TRUE,Autumn
+ABIFSE7,SCIU7SR,Statistics Using R,TRUE,Autumn
+ABIFSE8,AQUU6MB,Changing Oceans,FALSE,Spring
+ABIFSE8,BIOU6PE,Plant Ecology,TRUE,Spring
+ABIFSE8,BIOU8FC,Biology Field Course,TRUE,Spring
+ABIFSE8,BIOU9IN,Infectious Disease,FALSE,Spring
+ABIFSE8,ENVU9BC,Biodiversity Conservation and Management,FALSE,Spring

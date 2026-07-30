@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 # =============================================================================
 # Programme Skills Dashboard
-# University of Stirling — Skills Development Survey
+# University of Stirling  -  Skills Development Survey
 #
 # Combines three views:
 #   1. UN Competency Skills Wheel (radial wheel, competency highlight)
@@ -9,10 +9,10 @@
 #   3. Programme Skills Map       (year grid + skills trajectory)
 #
 # Data files (in data/):
-#   programmes.csv      — flat programme structure (one row per module slot)
-#   module_skills.csv   — module skills + metadata in tidy/long format
-#   module_topics.csv   — module topic tags
-#   collections.csv     — collection module pools
+#   programmes.csv       -  flat programme structure (one row per module slot)
+#   module_skills.csv    -  module skills + metadata in tidy/long format
+#   module_topics.csv    -  module topic tags
+#   collections.csv      -  collection module pools
 #
 # Local:   shiny::runApp("app.R")
 # Deploy:  rsconnect::deployApp("app.R")
@@ -230,7 +230,7 @@ build_wheel_html <- function(programme, selected_comp, df_override = NULL) {
     comp_angles[[comp]] <- list(start = comp_start, end = comp_end, mid = comp_mid)
   }
 
-  # Module placements — only the selected competency
+  # Module placements  -  only the selected competency
   for (ci in seq_len(N_COMP)) {
     comp <- COMPETENCIES[ci]
     comp_df <- df[df$competency == comp, ]
@@ -325,7 +325,7 @@ build_wheel_html <- function(programme, selected_comp, df_override = NULL) {
       comp_color, display_name
     ))
 
-    # Ring labels — opposite side
+    # Ring labels  -  opposite side
     opp_angle <- wedge_mid + 180
     opp_rad <- opp_angle * pi / 180
     for (yi in seq_len(min(max_year, 5))) {
@@ -504,7 +504,7 @@ build_skills_wheel_html <- function(programme, category, selected_skill = "",
       display_name
     ))
 
-    # Ring labels — opposite side
+    # Ring labels  -  opposite side
     opp_angle <- wedge_mid + 180
     opp_rad <- opp_angle * pi / 180
     for (yi in seq_len(min(max_year, 5))) {
@@ -630,7 +630,7 @@ ui <- page_fillable(
     ),
     div(style = "flex: 1; min-width: 200px;",
       selectInput("pathway", "Select Pathway",
-                  choices = c("\u2014 None \u2014"))
+                  choices = c("- None -"))
     ),
     div(style = "flex: 1; min-width: 200px;",
       selectInput("skills_area", "Skills Area",
@@ -760,18 +760,18 @@ server <- function(input, output, session) {
   hovered_year <- reactiveVal(NULL)
 
   programme_label <- reactive({
-    if (is.null(input$pathway) || input$pathway == "" || input$pathway == "\u2014 None \u2014") {
+    if (is.null(input$pathway) || input$pathway == "" || input$pathway == "- None -") {
       input$degree
     } else {
-      paste0(input$degree, " \u2014 ", input$pathway)
+      paste0(input$degree, " - ", input$pathway)
     }
   })
 
   observeEvent(input$degree, {
     pathways <- unique(programmes_csv$pathway[programmes_csv$degree == input$degree])
     pathways <- pathways[nzchar(pathways)]
-    choices <- c("\u2014 None \u2014", pathways)
-    sel <- if (input$pathway %in% choices) input$pathway else "\u2014 None \u2014"
+    choices <- c("- None -", pathways)
+    sel <- if (input$pathway %in% choices) input$pathway else "- None -"
     updateSelectInput(session, "pathway", choices = choices, selected = sel)
   })
 
@@ -783,7 +783,7 @@ server <- function(input, output, session) {
     pathways_in_deg <- unique(programmes_csv$pathway[
       programmes_csv$degree == deg & nzchar(programmes_csv$pathway)
     ])
-    (is.null(pwy) || pwy == "" || pwy == "\u2014 None \u2014") && length(pathways_in_deg) > 0
+    (is.null(pwy) || pwy == "" || pwy == "- None -") && length(pathways_in_deg) > 0
   })
 
   programme_data <- reactive({
@@ -854,7 +854,12 @@ server <- function(input, output, session) {
                             radial_csv$module_code %in% actual_codes, ]
       base_df <- base_df[!duplicated(paste(base_df$module_code, base_df$competency, base_df$level, base_df$year)), ]
     } else {
-      base_df <- radial_csv[radial_csv$programme == programme_label(), ]
+      pd <- programme_data()
+      prog_codes <- unique(pd$module_code)
+      coll_names <- names(collections_all())
+      actual_codes <- setdiff(prog_codes, coll_names)
+      base_df <- radial_csv[radial_csv$programme == programme_label() &
+                            radial_csv$module_code %in% actual_codes, ]
     }
     if (is.null(sel) || nrow(sel) == 0) return(base_df)
     sel_rad <- radial_csv[radial_csv$module_code %in% sel$module_code, ]
