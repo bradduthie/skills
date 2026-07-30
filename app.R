@@ -801,24 +801,38 @@ server <- function(input, output, session) {
     c(collections, vc)
   })
 
-  virtual_radial_df <- reactive({
-    if (!is_virtual()) return(NULL)
-    deg <- input$degree
+  selected_opt_modules <- reactive({
     pd <- programme_data()
-    prog_codes <- unique(pd$module_code)
-    coll_names <- names(collections_all())
-    actual_codes <- setdiff(prog_codes, coll_names)
-    coll_codes <- intersect(prog_codes, coll_names)
-    expanded_codes <- actual_codes
-    for (cc in coll_codes) {
-      expanded_codes <- c(expanded_codes,
-                          sapply(collections_all()[[cc]], `[[`, "code"))
+    if (nrow(pd) == 0) return(NULL)
+    rows <- list()
+    for (i in seq_len(nrow(pd))) {
+      r <- pd[i, ]
+      if (nchar(trimws(r$collection)) == 0) next
+      yr <- r$year
+      sem <- r$semester
+      coll_code <- r$collection
+      key <- semester_key(yr, sem)
+      cnt <- sum(pd$year == yr & pd$semester == sem & pd$collection == coll_code)
+      for (j in seq_len(cnt)) {
+        input_id <- if (j == 1) paste0("opt_", key, "_", coll_code) else paste0("opt_", key, "_", coll_code, "_", j)
+        val <- input[[input_id]]
+        if (!is.null(val) && nchar(val) > 0) {
+          mname <- if (!is.null(module_meta[[val]])) module_meta[[val]]$name else val
+          has_sk <- !is.null(skills_lookup[[val]])
+          rows[[length(rows) + 1]] <- data.frame(
+            module_code = val,
+            module_name = mname,
+            year = as.integer(yr),
+            semester = sem,
+            collection = coll_code,
+            has_skills = has_sk,
+            stringsAsFactors = FALSE
+          )
+        }
+      }
     }
-    expanded_codes <- unique(expanded_codes)
-    rad <- radial_csv[radial_csv$degree == deg &
-                      radial_csv$module_code %in% expanded_codes, ]
-    rad <- rad[!duplicated(paste(rad$module_code, rad$competency, rad$level, rad$year)), ]
-    rad
+    if (length(rows) == 0) return(NULL)
+    do.call(rbind, rows)
   })
 
   virtual_mod_codes <- reactive({
@@ -826,6 +840,64 @@ server <- function(input, output, session) {
     pd <- programme_data()
     codes <- unique(pd$module_code[pd$has_skills == TRUE])
     codes[!grepl("^ANY|^_VD_", codes)]
+  })
+
+  wheel_radial_df <- reactive({
+    sel <- selected_opt_modules()
+    if (is_virtual()) {
+      deg <- input$degree
+      pd <- programme_data()
+      prog_codes <- unique(pd$module_code)
+      coll_names <- names(collections_all())
+      actual_codes <- setdiff(prog_codes, coll_names)
+      base_df <- radial_csv[radial_csv$degree == deg &
+                            radial_csv$module_code %in% actual_codes, ]
+      base_df <- base_df[!duplicated(paste(base_df$module_code, base_df$competency, base_df$level, base_df$year)), ]
+    } else {
+      base_df <- radial_csv[radial_csv$programme == programme_label(), ]
+    }
+    if (is.null(sel) || nrow(sel) == 0) return(base_df)
+    sel_rad <- radial_csv[radial_csv$module_code %in% sel$module_code, ]
+    if (nrow(sel_rad) == 0) return(base_df)
+    for (i in seq_len(nrow(sel_rad))) {
+      mc <- sel_rad$module_code[i]
+      idx <- which(sel$module_code == mc)[1]
+      if (!is.na(idx)) {
+        sel_rad$year[i] <- sel$year[idx]
+        sel_rad$semester[i] <- sel$semester[idx]
+      }
+    }
+    sel_rad$programme <- programme_label()
+    merged <- rbind(base_df, sel_rad)
+    merged[!duplicated(paste(merged$module_code, merged$competency, merged$level, merged$year)), ]
+  })
+
+  wheel_prog_df <- reactive({
+    base_df <- programme_data()
+    sel <- selected_opt_modules()
+    if (is.null(sel) || nrow(sel) == 0) return(base_df)
+    sel_keys <- paste(sel$year, sel$semester, sel$collection)
+    base_df$._key <- paste(base_df$year, base_df$semester, base_df$collection)
+    keep <- !(nchar(trimws(base_df$collection)) > 0 & base_df$._key %in% sel_keys)
+    base_df <- base_df[keep, ]
+    base_df$._key <- NULL
+    add_rows <- lapply(seq_len(nrow(sel)), function(i) {
+      r <- sel[i, ]
+      data.frame(
+        programme_label = programme_label(),
+        degree = input$degree,
+        pathway = if (is_virtual()) "" else input$pathway,
+        year = r$year,
+        semester = r$semester,
+        module_code = r$module_code,
+        module_name = r$module_name,
+        status = "optional",
+        collection = "",
+        has_skills = r$has_skills,
+        stringsAsFactors = FALSE
+      )
+    })
+    rbind(base_df, do.call(rbind, add_rows))
   })
 
   lapply(seq_len(N_COMP), function(ci) {
@@ -927,21 +999,12 @@ server <- function(input, output, session) {
   # ---- SECTION 1: Wheel ----
   output$wheel <- renderUI({
     if (input$skills_area == "UN Competencies") {
-      if (is_virtual()) {
-        HTML(build_wheel_html(programme_label(), selected_comp(),
-                              df_override = virtual_radial_df()))
-      } else {
-        HTML(build_wheel_html(programme_label(), selected_comp()))
-      }
+      HTML(build_wheel_html(programme_label(), selected_comp(),
+                            df_override = wheel_radial_df()))
     } else {
-      if (is_virtual()) {
-        HTML(build_skills_wheel_html(programme_label(), input$skills_area,
-                                     selected_skill = selected_skill(),
-                                     prog_modules_override = programme_data()))
-      } else {
-        HTML(build_skills_wheel_html(programme_label(), input$skills_area,
-                                     selected_skill = selected_skill()))
-      }
+      HTML(build_skills_wheel_html(programme_label(), input$skills_area,
+                                   selected_skill = selected_skill(),
+                                   prog_modules_override = wheel_prog_df()))
     }
   })
 
@@ -956,7 +1019,7 @@ server <- function(input, output, session) {
         return(div(h4(label), p("No skills data for this category.")))
       }
 
-      prog_mod <- programme_data()
+      prog_mod <- wheel_prog_df()
       mod_codes <- unique(prog_mod$module_code[prog_mod$has_skills == TRUE])
       mod_codes <- mod_codes[!grepl("^ANY|^_VD_", mod_codes)]
 
@@ -1010,11 +1073,7 @@ server <- function(input, output, session) {
     comp <- selected_comp()
     desc <- COMP_DESCRIPTIONS[[comp]]
 
-    df <- if (is_virtual()) {
-      virtual_radial_df()
-    } else {
-      radial_csv[radial_csv$programme == programme_label(), ]
-    }
+    df <- wheel_radial_df()
     df <- df[df$competency == comp, ]
     df <- df[df$level != "0", ]
     df <- df[order(df$year, df$module_code), ]
