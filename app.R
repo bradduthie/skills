@@ -577,9 +577,49 @@ build_virtual_programme <- function(degree) {
     }
 
     if (nrow(pathway) > 0) {
-      coll_rows <- optional[nchar(trimws(optional$collection)) > 0, , drop = FALSE]
-      if (nrow(coll_rows) > 0) {
-        result[[length(result) + 1]] <- coll_rows[1, ]
+      pwy_no_coll <- pathway[nchar(trimws(pathway$collection)) == 0, , drop = FALSE]
+      if (nrow(pwy_no_coll) > 0) {
+        all_progs <- unique(slot_rows$programme_label)
+        max_total <- 0
+        for (prog in all_progs) {
+          prog_rows <- slot_rows[slot_rows$programme_label == prog, ]
+          n_comp <- length(unique(prog_rows$module_code[prog_rows$status == "compulsory"]))
+          n_opt <- sum(prog_rows$status == "optional" & nchar(trimws(prog_rows$collection)) > 0)
+          n_pwy <- sum(prog_rows$status == "pathway" & nchar(trimws(prog_rows$collection)) == 0)
+          total <- n_comp + n_opt + n_pwy
+          if (total > max_total) max_total <- total
+        }
+        already <- 0
+        for (i in seq_along(result)) {
+          r <- result[[i]]
+          mc <- as.character(r$module_code)
+          if (as.character(r$year) == yr && as.character(r$semester) == sem
+              && !grepl("^ANY", mc)) {
+            already <- already + 1
+          }
+        }
+        need <- max_total - already
+        if (need > 0) {
+          template <- NULL
+          for (i in seq_len(nrow(optional))) {
+            if (nchar(trimws(optional[i, ]$collection)) > 0) {
+              template <- optional[i, ]
+              break
+            }
+          }
+          if (is.null(template)) {
+            coll_code <- if (yr == "3") "ENSFYR3" else "ENSFYR4"
+            coll_name <- if (yr == "3") "Year 3 Options for Environmental Science" else "Year 4 Environmental Science"
+            template <- slot_rows[1, ]
+            template$module_code <- coll_code
+            template$module_name <- coll_name
+            template$collection <- coll_code
+            template$status <- "optional"
+          }
+          for (j in seq_len(need)) {
+            result[[length(result) + 1]] <- template
+          }
+        }
       }
     }
   }

@@ -50,3 +50,35 @@ ABIFSE8,BIOU6PE,Plant Ecology,TRUE,Spring
 ABIFSE8,BIOU8FC,Biology Field Course,TRUE,Spring
 ABIFSE8,BIOU9IN,Infectious Disease,FALSE,Spring
 ABIFSE8,ENVU9BC,Biodiversity Conservation and Management,FALSE,Spring
+ENSFYR3,BIOU9PC,Population and Community Ecology,true,Autumn
+ENSFYR3,ENVU5EP,Environmental Policy in a Changing World,true,Autumn
+ENSFYR3,ENVU5S5,Living Soils,true,Autumn
+ENSFYR3,ENVU9WM,Sustainable Water Management,true,Autumn
+ENSFYR3,GEOU9GL,Glaciers and Landscape,true,Autumn
+ENSFYR3,GEOU9IC,Scotland Field Course,true,Autumn
+ENSFYR3,GEOU9SP,Geographical Information Systems,true,Autumn
+ENSFYR3,SCIU7SR,Statistics Using R,true,Autumn
+ENSFYR3,BIOU6PE,Plant Ecology,true,Spring
+ENSFYR3,ENVU6EA,Methods and Applications in Environmental Sciences,true,Spring
+ENSFYR3,ENVU6SP,Sustainable Landscapes,true,Spring
+ENSFYR3,ENVU9EO,Earth Observation,true,Spring
+ENSFYR3,ENVU9FC,International Field Course,true,Spring
+ENSFYR3,GEOU9EH,Environmental Hazards,true,Spring
+ENSFYR3,ENVU9BC,Biodiversity Conservation and Management,false,
+ENSFYR4,BIOU9PC,Population and Community Ecology,true,Autumn
+ENSFYR4,ENVU5EP,Environmental Policy in a Changing World,true,Autumn
+ENSFYR4,ENVU5S5,Living Soils,true,Autumn
+ENSFYR4,ENVU9WM,Sustainable Water Management,true,Autumn
+ENSFYR4,GEOU9GL,Glaciers and Landscape,true,Autumn
+ENSFYR4,GEOU9IC,Scotland Field Course,true,Autumn
+ENSFYR4,GEOU9SP,Geographical Information Systems,true,Autumn
+ENSFYR4,SCIU7SR,Statistics Using R,true,Autumn
+ENSFYR4,BIOU6PE,Plant Ecology,true,Spring
+ENSFYR4,ENVU6EA,Methods and Applications in Environmental Sciences,true,Spring
+ENSFYR4,ENVU6SP,Sustainable Landscapes,true,Spring
+ENSFYR4,ENVU9EO,Earth Observation,true,Spring
+ENSFYR4,ENVU9FC,International Field Course,true,Spring
+ENSFYR4,GEOU9EH,Environmental Hazards,true,Spring
+ENSFYR4,ENVU9BC,Biodiversity Conservation and Management,false,
+ENSFYR4,ENVU7CP,Conservation Placement,true,Autumn
+
