@@ -5,7 +5,7 @@ account: bradduthie
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17613829
-bundleId: 12343266
+bundleId: 12343400
 url: https://bradduthie.shinyapps.io/skills/
 version: 1
 asMultiple: FALSE

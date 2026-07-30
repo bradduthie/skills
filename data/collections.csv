@@ -90,6 +90,37 @@ ECOFSE2,ENVU2LV,Landscape Evolution,true,Spring
 ECOFSE2,GEOU2PP,People and planet: global environmental challenges,false,Spring
 ECOFSE3,ENVU4E4,The Biosphere,true,Spring
 ECOFSE3,GEOU4ER,Environmental Resilience,false,Spring
+EGEFYR3,BIOU6PE,Plant Ecology,true,Spring
+EGEFYR3,ENVU5EP,Environmental Policy in a Changing World,true,Autumn
+EGEFYR3,ENVU5S5,Living Soils,true,Autumn
+EGEFYR3,ENVU6SP,Sustainable Landscapes,true,Spring
+EGEFYR3,ENVU9BC,Biodiversity Conservation and Management,false,Spring
+EGEFYR3,ENVU9EO,Earth Observation,true,Spring
+EGEFYR3,ENVU9FC,International Field Course,true,Spring
+EGEFYR3,ENVU9WM,Sustainable Water Management,true,Autumn
+EGEFYR3,EOEU5OE,Outdoor education in practice: work placement,false,
+EGEFYR3,EOEU6S6,Mountain Leader Assessment,false,
+EGEFYR3,GEOU6GI,Sustainable Development,false,Spring
+EGEFYR3,GEOU9EH,Environmental Hazards,true,Spring
+EGEFYR3,GEOU9GL,Glaciers and Landscape,true,Autumn
+EGEFYR3,GEOU9IC,Scotland Field Course,true,Autumn
+EGEFYR3,GEOU9SP,Geographical Information Systems,true,Autumn
+EGEFYR3,SCIU7SR,Statistics Using R,true,Autumn
+EGEFELE,BIOU6PE,Plant Ecology,true,Spring
+EGEFELE,ENVU5EP,Environmental Policy in a Changing World,true,Autumn
+EGEFELE,ENVU5S5,Living Soils,true,Autumn
+EGEFELE,ENVU6SP,Sustainable Landscapes,true,Spring
+EGEFELE,ENVU7CP,Conservation Placement,true,Autumn
+EGEFELE,ENVU9BC,Biodiversity Conservation and Management,false,Spring
+EGEFELE,ENVU9EO,Earth Observation,true,Spring
+EGEFELE,ENVU9WM,Sustainable Water Management,true,Autumn
+EGEFELE,EOEU6S6,Mountain Leader Assessment,false,
+EGEFELE,GEOU6GI,Sustainable Development,false,Spring
+EGEFELE,GEOU9EH,Environmental Hazards,true,Spring
+EGEFELE,GEOU9GL,Glaciers and Landscape,true,Autumn
+EGEFELE,GEOU9IC,Scotland Field Course,true,Autumn
+EGEFELE,GEOU9SP,Geographical Information Systems,true,Autumn
+EGEFELE,SCIU7SR,Statistics Using R,true,Autumn
 ECOFCO3,AQUU6MB,Changing Oceans,false,Spring
 ECOFCO3,BIOU5MB,Microbiology,true,Autumn
 ECOFCO3,BIOU6BE,Behavioural Ecology,true,Spring
