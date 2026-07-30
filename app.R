@@ -804,7 +804,19 @@ server <- function(input, output, session) {
   virtual_radial_df <- reactive({
     if (!is_virtual()) return(NULL)
     deg <- input$degree
-    rad <- radial_csv[radial_csv$degree == deg, ]
+    pd <- programme_data()
+    prog_codes <- unique(pd$module_code)
+    coll_names <- names(collections_all())
+    actual_codes <- setdiff(prog_codes, coll_names)
+    coll_codes <- intersect(prog_codes, coll_names)
+    expanded_codes <- actual_codes
+    for (cc in coll_codes) {
+      expanded_codes <- c(expanded_codes,
+                          sapply(collections_all()[[cc]], `[[`, "code"))
+    }
+    expanded_codes <- unique(expanded_codes)
+    rad <- radial_csv[radial_csv$degree == deg &
+                      radial_csv$module_code %in% expanded_codes, ]
     rad <- rad[!duplicated(paste(rad$module_code, rad$competency, rad$level, rad$year)), ]
     rad
   })
