@@ -82,3 +82,44 @@ ENSFYR4,GEOU9EH,Environmental Hazards,true,Spring
 ENSFYR4,ENVU9BC,Biodiversity Conservation and Management,false,
 ENSFYR4,ENVU7CP,Conservation Placement,true,Autumn
 
+ECOFSE1,AQUU1OP,Our Blue Planet,false,Autumn
+ECOFSE1,ENVU1BP,Building Planet Earth,true,Autumn
+ECOFSE1,UNIU9A1,"Wicked Problems, Sustainable Solutions",false,Autumn
+ECOFSE2,AQUU2TP,Our Thirsty Planet: Man and the Aquatic Environment,false,Spring
+ECOFSE2,ENVU2LV,Landscape Evolution,true,Spring
+ECOFSE2,GEOU2PP,People and planet: global environmental challenges,false,Spring
+ECOFSE3,ENVU4E4,The Biosphere,true,Spring
+ECOFSE3,GEOU4ER,Environmental Resilience,false,Spring
+ECOFCO3,AQUU6MB,Changing Oceans,false,Spring
+ECOFCO3,BIOU5MB,Microbiology,true,Autumn
+ECOFCO3,BIOU6BE,Behavioural Ecology,true,Spring
+ECOFCO3,BIOU9AP,Animal Physiology,true,Autumn
+ECOFCO3,BIOU9IN,Infectious Disease,false,Spring
+ECOFCO3,ENVU5S5,Living Soils,true,Autumn
+ECOFCO3,ENVU6EA,Methods and Applications in Environmental Sciences,true,Spring
+ECOFCO3,ENVU6SP,Sustainable Landscapes,true,Spring
+ECOFCO3,ENVU9EO,Earth Observation,true,Spring
+ECOFCO3,ENVU9FC,International Field Course,true,Spring
+ECOFCO3,ENVU9WM,Sustainable Water Management,true,Autumn
+ECOFCO3,GEOU9EH,Environmental Hazards,true,Spring
+ECOFCO3,GEOU9GL,Glaciers and Landscape,true,Autumn
+ECOFCO3,GEOU9SE,Energy and Society,false,Autumn
+ECOFCO3,GEOU9SP,Geographical Information Systems,true,Autumn
+ECOFCO3,SCIU7SR,Statistics Using R,true,Autumn
+ECOFEL2,AQUU7MM,Marine Mammals Field Course,false,Autumn
+ECOFEL2,BIOU7SB,"Phylogenetics, Bioinformatics and Omics",true,Autumn
+ECOFEL2,BIOU9SX,Evolutionary Consequences of Sexual Reproduction,true,Autumn
+ECOFEL2,BIOU9TM,Molecular Techniques,true,Autumn
+ECOFEL2,ENVU7CP,Conservation Placement,true,Autumn
+ECOFEL2,BIOU7FC,Biology Field Course,true,Autumn
+ECOFEL2,BIOU9PC,Population and Community Ecology,true,Autumn
+ECOFEL2,ENVU9WM,Sustainable Water Management,true,Autumn
+ECOFEL2,GEOU9SP,Geographical Information Systems,true,Autumn
+ECOFEL2,SCIU7SR,Statistics Using R,true,Autumn
+ECOFEL3,AQUU6MB,Changing Oceans,false,Spring
+ECOFEL3,BIOU9IN,Infectious Disease,false,Spring
+ECOFEL3,ENVU9BC,Biodiversity Conservation and Management,false,Spring
+ECOFEL3,GEOU9EH,Environmental Hazards,true,Spring
+ECOFEL3,BIOU8FC,Biology Field Course,true,Spring
+ECOFEL3,ENVU9EO,Earth Observation,true,Spring
+ECOFEL3,GEOU9SE,Energy and Society,false,Spring
