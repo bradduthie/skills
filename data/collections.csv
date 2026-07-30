@@ -154,3 +154,11 @@ ECOFEL3,GEOU9EH,Environmental Hazards,true,Spring
 ECOFEL3,BIOU8FC,Biology Field Course,true,Spring
 ECOFEL3,ENVU9EO,Earth Observation,true,Spring
 ECOFEL3,GEOU9SE,Energy and Society,false,Spring
+CELFSE5,AQUU5LR,Managing Living Aquatic Resources,FALSE,Autumn
+CELFSE5,BIOU9PC,Population and Community Ecology,TRUE,Autumn
+CELFSE5,SCIU7SR,Statistics Using R,TRUE,Autumn
+CELFSE6,AQUU6MB,Changing Oceans,FALSE,Spring
+CELFSE6,BIOU6BE,Behavioural Ecology,TRUE,Spring
+CELFSE6,BIOU6PE,Plant Ecology,TRUE,Spring
+CELFSE6,BIOU9IN,Infectious Disease,FALSE,Spring
+CELFSE6,BIOU9PL,Applied Biological Sciences Placement,TRUE,Spring

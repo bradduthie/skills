@@ -2,45 +2,47 @@
 
 These modules have non-zero competency data in `radial_data.csv`.
 
-- `BIOU1IE` — Ecology: An Introduction
-- `BIOU2CE` — Cells, the building blocks of life
-- `BIOU2PH` — Introduction to Physiology
-- `BIOU3GE` — Evolution and Genetics
-- `BIOU4BD` — Biodiversity
-- `BIOU5MB` — Microbiology
-- `BIOU6AC` — The Animal Cell
-- `BIOU6BE` — Behavioural Ecology
-- `BIOU6PE` — Plant Ecology
-- `BIOU7CM` — Biological Control Mechanisms
-- `BIOU7FC` — Biology Field Course
-- `BIOU7SB` — Phylogenetics, Bioinformatics and Omics
-- `BIOU8FC` — Biology Field Course
-- `BIOU9AP` — Animal Physiology
-- `BIOU9IN` — Infectious Disease
-- `BIOU9PC` — Population and Community Ecology
-- `BIOU9SX` — Evolutionary Consequences of Sexual Reproduction
-- `BIOU9TM` — Molecular Techniques
-- `ENVU1BP` — Building Planet Earth
-- `ENVU2LV` — Landscape Evolution
-- `ENVU4E4` — The Biosphere
-- `ENVU5EP` — Environmental Policy in a Changing World
-- `ENVU5S5` — Living Soils
-- `ENVU6EA` — Methods and Applications in Environmental Sciences
-- `ENVU6SP` — Sustainable Landscapes
-- `ENVU7CP` — Conservation Placement
-- `ENVU9BC` — Biodiversity Conservation and Management
-- `ENVU9EO` — Earth Observation / Remote Environmental Monitoring
-- `ENVU9FC` — International Field Course
-- `ENVU9WM` — Sustainable Water Management
-- `GEOU9EH` — Environmental Hazards
-- `GEOU9GL` — Glaciers and Landscape
-- `GEOU9IC` — Scotland Field Course
-- `GEOU9SP` — Geographical Information Systems
-- `SCIU1FI` — Fundamentals for scientific inquiry
-- `SCIU3FB` — Practical Field Biology
-- `SCIU3FS` — Field skills for Sustainable Solutions
-- `SCIU3LS` — Lab Essentials for Physical and Life Sciences
-- `SCIU4T4` — Statistical Techniques
-- `SCIU7SR` — Statistics Using R
-- `SCIU9PR` — Biological and Environmental Sciences Honours Project
-- `SCIU9PS` — Biological and Environmental Sciences Honours Project Start
+- `BIOU1IE` - Ecology: An Introduction
+- `BIOU2CE` - Cells, the building blocks of life
+- `BIOU2PH` - Introduction to Physiology
+- `BIOU3GE` - Evolution and Genetics
+- `BIOU4BD` - Biodiversity
+- `BIOU5MB` - Microbiology
+- `BIOU6AC` - The Animal Cell
+- `BIOU6BE` - Behavioural Ecology
+- `BIOU6PE` - Plant Ecology
+- `BIOU7CM` - Biological Control Mechanisms
+- `BIOU7FC` - Biology Field Course
+- `BIOU7SB` - Phylogenetics, Bioinformatics and Omics
+- `BIOU8FC` - Biology Field Course
+- `BIOU9AP` - Animal Physiology
+- `BIOU9IN` - Infectious Disease
+- `BIOU9PC` - Population and Community Ecology
+- `BIOU9SX` - Evolutionary Consequences of Sexual Reproduction
+- `BIOU9TM` - Molecular Techniques
+- `ENVU1BP` - Building Planet Earth
+- `ENVU2LV` - Landscape Evolution
+- `ENVU4E4` - The Biosphere
+- `ENVU5EP` - Environmental Policy in a Changing World
+- `ENVU5S5` - Living Soils
+- `ENVU6EA` - Methods and Applications in Environmental Sciences
+- `ENVU6SP` - Sustainable Landscapes
+- `ENVU7CP` - Conservation Placement
+- `ENVU9BC` - Biodiversity Conservation and Management
+- `ENVU9EO` - Earth Observation / Remote Environmental Monitoring
+- `ENVU9FC` - International Field Course
+- `ENVU9WM` - Sustainable Water Management
+- `GEOU9EH` - Environmental Hazards
+- `GEOU9GL` - Glaciers and Landscape
+- `GEOU9IC` - Scotland Field Course
+- `GEOU9SP` - Geographical Information Systems
+- `SCIU1FI` - Fundamentals for scientific inquiry
+- `SCIU3FB` - Practical Field Biology
+- `SCIU3FS` - Field skills for Sustainable Solutions
+- `SCIU3LS` - Lab Essentials for Physical and Life Sciences
+- `SCIU4T4` - Statistical Techniques
+- `SCIU7SR` - Statistics Using R
+- `SCIU9PR` - Biological and Environmental Sciences Honours Project
+- `SCIU9PS` - Biological and Environmental Sciences Honours Project Start
+- `BIOU9CP` - Cell Biology and Applied Biological Sciences Dissertation
+- `BIOU9PL` - Applied Biological Sciences Placement
