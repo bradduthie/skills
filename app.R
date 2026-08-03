@@ -90,7 +90,7 @@ for (mc in names(skill_list)) {
 # PROGRAMME LABELS
 # ---------------------------------------------------------------------------
 programme_labels <- unique(programmes_csv$programme_label)
-degree_labels   <- unique(programmes_csv$degree)
+degree_labels   <- sort(unique(programmes_csv$degree))
 
 # ---------------------------------------------------------------------------
 # COMPETENCY DEFINITIONS
