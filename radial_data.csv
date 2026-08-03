@@ -1,4 +1,12 @@
 programme,degree,pathway,competency,module_code,module_name,year,semester,level,status
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Systems Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Adaptability,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Self-Awareness,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Innovation,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Teamwork & Collaboration,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Critical Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Norms and Conflict Resolution,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Integrated Problem Solving,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Critical Thinking,BIOU2PH,Introduction to Physiology,1,Spring,2,compulsory
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Adaptability,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Innovation,BIOU2CE,"Cells, the building blocks of life",1,Spring,1,compulsory
@@ -113,7 +121,6 @@ Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainabilit
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Systems Thinking,SCIU4T4,Statistical Techniques,2,Spring,1,compulsory
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Systems Thinking,BIOU9PC,Population and Community Ecology,3,Autumn,3,pathway
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Systems Thinking,BIOU6PE,Plant Ecology,3,Spring,3,compulsory
-Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Systems Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,0,pathway
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Systems Thinking,ENVU9WM,Sustainable Water Management,4,Autumn,3,pathway
 Biology - Biodiversity and Sustainability,Biology,Biodiversity and Sustainability,Systems Thinking,SCIU9PR,Biological and Environmental Sciences Honours Project,4,Spring,3,compulsory
 Biology - Data Analysis and Biostatistics,Biology,Data Analysis and Biostatistics,Systems Thinking,BIOU1IE,Ecology: An Introduction,1,Autumn,0,compulsory
@@ -268,6 +275,22 @@ Biology - Physiology and Molecular,Biology,Physiology and Molecular,Norms and Co
 Biology - Physiology and Molecular,Biology,Physiology and Molecular,Self-Awareness,SCIU9PR,Biological and Environmental Sciences Honours Project,4,Spring,3,compulsory
 Biology - Physiology and Molecular,Biology,Physiology and Molecular,Systems Thinking,SCIU9PR,Biological and Environmental Sciences Honours Project,4,Spring,3,compulsory
 Biology - Physiology and Molecular,Biology,Physiology and Molecular,Teamwork & Collaboration,SCIU9PR,Biological and Environmental Sciences Honours Project,4,Spring,3,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Systems Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Adaptability,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Self-Awareness,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Innovation,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Teamwork & Collaboration,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Critical Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Norms and Conflict Resolution,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Integrated Problem Solving,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,1,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Adaptability,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Self-Awareness,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Innovation,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Teamwork & Collaboration,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Critical Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Norms and Conflict Resolution,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Integrated Problem Solving,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
 Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Critical Thinking,BIOU2PH,Introduction to Physiology,1,Spring,2,compulsory
 Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Systems Thinking,BIOU2PH,Introduction to Physiology,1,Spring,1,compulsory
 Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Adaptability,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
@@ -404,6 +427,14 @@ Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and
 Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Critical Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
 Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Integrated Problem Solving,BIOU8FC,Biology Field Course,4,Spring,2,optional
 Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Systems Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,1,compulsory
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Adaptability,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Self-Awareness,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Innovation,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Teamwork & Collaboration,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Critical Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Norms and Conflict Resolution,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Integrated Problem Solving,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
 Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Critical Thinking,BIOU2PH,Introduction to Physiology,1,Spring,2,compulsory
 Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Systems Thinking,BIOU2PH,Introduction to Physiology,1,Spring,1,compulsory
 Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Adaptability,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
@@ -540,6 +571,22 @@ Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis an
 Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Critical Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
 Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Integrated Problem Solving,BIOU8FC,Biology Field Course,4,Spring,2,optional
 Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Systems Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Systems Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Adaptability,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Self-Awareness,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Innovation,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Teamwork & Collaboration,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Critical Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Norms and Conflict Resolution,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Integrated Problem Solving,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,pathway
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,1,compulsory
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Adaptability,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Self-Awareness,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Innovation,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Teamwork & Collaboration,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Critical Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Norms and Conflict Resolution,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Integrated Problem Solving,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
 Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Critical Thinking,BIOU2PH,Introduction to Physiology,1,Spring,2,compulsory
 Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Systems Thinking,BIOU2PH,Introduction to Physiology,1,Spring,1,compulsory
 Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Adaptability,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
@@ -676,6 +723,14 @@ Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolu
 Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Critical Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
 Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Integrated Problem Solving,BIOU8FC,Biology Field Course,4,Spring,2,optional
 Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Systems Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,1,compulsory
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Adaptability,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Self-Awareness,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Innovation,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Teamwork & Collaboration,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Critical Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Norms and Conflict Resolution,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Integrated Problem Solving,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
 Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Critical Thinking,BIOU2PH,Introduction to Physiology,1,Spring,2,compulsory
 Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Systems Thinking,BIOU2PH,Introduction to Physiology,1,Spring,1,compulsory
 Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Adaptability,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
@@ -812,10 +867,6 @@ Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecula
 Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Critical Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
 Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Integrated Problem Solving,BIOU8FC,Biology Field Course,4,Spring,2,optional
 Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Systems Thinking,BIOU8FC,Biology Field Course,4,Spring,3,optional
-Animal Biology - Biodiversity and Sustainability,Animal Biology,Biodiversity and Sustainability,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
-Animal Biology - Data Analysis and Biostatistics,Animal Biology,Data Analysis and Biostatistics,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
-Animal Biology - Ecological and Evolutionary,Animal Biology,Ecological and Evolutionary,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
-Animal Biology - Physiology and Molecular,Animal Biology,Physiology and Molecular,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
 Biology - Ecological and Evolutionary,Biology,Ecological and Evolutionary,Systems Thinking,BIOU2PH,Introduction to Physiology,1,Spring,1,compulsory
 Biology - Ecological and Evolutionary,Biology,Ecological and Evolutionary,Systems Thinking,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
 Biology - Ecological and Evolutionary,Biology,Ecological and Evolutionary,Systems Thinking,SCIU3FB,Practical Field Biology,2,Autumn,1,compulsory
@@ -1143,6 +1194,22 @@ Environmental Science - Ecology & Biodiversity,Environmental Science,Ecology & B
 Environmental Science - Ecology & Biodiversity,Environmental Science,Ecology & Biodiversity,Critical Thinking,GEOU9IC,Scotland Field Course,3,Autumn,2,optional
 Environmental Science - Ecology & Biodiversity,Environmental Science,Ecology & Biodiversity,Self-Awareness,GEOU9IC,Scotland Field Course,3,Autumn,1,optional
 Environmental Science - Ecology & Biodiversity,Environmental Science,Ecology & Biodiversity,Integrated Problem Solving,GEOU9IC,Scotland Field Course,3,Autumn,2,optional
+Environmental Geography,Environmental Geography,,Systems Thinking,GEOU4ER,Environmental Resilience,2,Spring,2,compulsory
+Environmental Geography,Environmental Geography,,Adaptability,GEOU4ER,Environmental Resilience,2,Spring,2,compulsory
+Environmental Geography,Environmental Geography,,Self-Awareness,GEOU4ER,Environmental Resilience,2,Spring,2,compulsory
+Environmental Geography,Environmental Geography,,Innovation,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
+Environmental Geography,Environmental Geography,,Teamwork & Collaboration,GEOU4ER,Environmental Resilience,2,Spring,1,compulsory
+Environmental Geography,Environmental Geography,,Critical Thinking,GEOU4ER,Environmental Resilience,2,Spring,2,compulsory
+Environmental Geography,Environmental Geography,,Norms and Conflict Resolution,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
+Environmental Geography,Environmental Geography,,Integrated Problem Solving,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
+Environmental Geography,Environmental Geography,,Systems Thinking,GEOU6GI,Sustainable Development,3,Spring,3,compulsory
+Environmental Geography,Environmental Geography,,Adaptability,GEOU6GI,Sustainable Development,3,Spring,2,compulsory
+Environmental Geography,Environmental Geography,,Self-Awareness,GEOU6GI,Sustainable Development,3,Spring,3,compulsory
+Environmental Geography,Environmental Geography,,Innovation,GEOU6GI,Sustainable Development,3,Spring,3,compulsory
+Environmental Geography,Environmental Geography,,Teamwork & Collaboration,GEOU6GI,Sustainable Development,3,Spring,1,compulsory
+Environmental Geography,Environmental Geography,,Critical Thinking,GEOU6GI,Sustainable Development,3,Spring,3,compulsory
+Environmental Geography,Environmental Geography,,Norms and Conflict Resolution,GEOU6GI,Sustainable Development,3,Spring,1,compulsory
+Environmental Geography,Environmental Geography,,Integrated Problem Solving,GEOU6GI,Sustainable Development,3,Spring,3,compulsory
 Environmental Geography,Environmental Geography,,Adaptability,ENVU1BP,Building Planet Earth,1,Autumn,1,compulsory
 Environmental Geography,Environmental Geography,,Critical Thinking,ENVU1BP,Building Planet Earth,1,Autumn,1,compulsory
 Environmental Geography,Environmental Geography,,Integrated Problem Solving,ENVU1BP,Building Planet Earth,1,Autumn,1,compulsory
@@ -1191,14 +1258,6 @@ Environmental Geography,Environmental Geography,,Norms and Conflict Resolution,S
 Environmental Geography,Environmental Geography,,Self-Awareness,SCIU3FS,Field skills for Sustainable Solutions,2,Autumn,2,compulsory
 Environmental Geography,Environmental Geography,,Systems Thinking,SCIU3FS,Field skills for Sustainable Solutions,2,Autumn,3,compulsory
 Environmental Geography,Environmental Geography,,Teamwork & Collaboration,SCIU3FS,Field skills for Sustainable Solutions,2,Autumn,3,compulsory
-Environmental Geography,Environmental Geography,,Adaptability,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Critical Thinking,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Integrated Problem Solving,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Innovation,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Norms and Conflict Resolution,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Self-Awareness,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Systems Thinking,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Teamwork & Collaboration,GEOU4ER,Environmental Resilience,2,Spring,0,compulsory
 Environmental Geography,Environmental Geography,,Adaptability,SCIU4T4,Statistical Techniques,2,Spring,1,compulsory
 Environmental Geography,Environmental Geography,,Critical Thinking,SCIU4T4,Statistical Techniques,2,Spring,2,compulsory
 Environmental Geography,Environmental Geography,,Integrated Problem Solving,SCIU4T4,Statistical Techniques,2,Spring,1,compulsory
@@ -1223,14 +1282,6 @@ Environmental Geography,Environmental Geography,,Norms and Conflict Resolution,G
 Environmental Geography,Environmental Geography,,Self-Awareness,GEOU9SP,Geographical Information Systems,3,Autumn,0,compulsory
 Environmental Geography,Environmental Geography,,Systems Thinking,GEOU9SP,Geographical Information Systems,3,Autumn,3,compulsory
 Environmental Geography,Environmental Geography,,Teamwork & Collaboration,GEOU9SP,Geographical Information Systems,3,Autumn,0,compulsory
-Environmental Geography,Environmental Geography,,Adaptability,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Critical Thinking,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Integrated Problem Solving,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Innovation,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Norms and Conflict Resolution,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Self-Awareness,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Systems Thinking,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
-Environmental Geography,Environmental Geography,,Teamwork & Collaboration,GEOU6GI,Sustainable Development,3,Spring,0,compulsory
 Environmental Geography,Environmental Geography,,Adaptability,EOEU5OE,Outdoor education in practice: work placement,3,Autumn,0,optional
 Environmental Geography,Environmental Geography,,Critical Thinking,EOEU5OE,Outdoor education in practice: work placement,3,Autumn,0,optional
 Environmental Geography,Environmental Geography,,Integrated Problem Solving,EOEU5OE,Outdoor education in practice: work placement,3,Autumn,0,optional
@@ -1263,6 +1314,14 @@ Environmental Geography,Environmental Geography,,Norms and Conflict Resolution,S
 Environmental Geography,Environmental Geography,,Self-Awareness,SCIU9PR,Biological and Environmental Sciences Honours Project,4,Spring,3,compulsory
 Environmental Geography,Environmental Geography,,Systems Thinking,SCIU9PR,Biological and Environmental Sciences Honours Project,4,Spring,3,compulsory
 Environmental Geography,Environmental Geography,,Teamwork & Collaboration,SCIU9PR,Biological and Environmental Sciences Honours Project,4,Spring,3,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,1,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Adaptability,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Self-Awareness,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Innovation,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Teamwork & Collaboration,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Critical Thinking,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Norms and Conflict Resolution,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
+Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Integrated Problem Solving,BIOU9AP,Animal Physiology,3,Autumn,0,compulsory
 Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Adaptability,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
 Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Critical Thinking,BIOU2CE,"Cells, the building blocks of life",1,Spring,2,compulsory
 Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Innovation,BIOU2CE,"Cells, the building blocks of life",1,Spring,1,compulsory
@@ -1378,6 +1437,14 @@ Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Critical Thinking,S
 Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Innovation,SCIU7SR,Statistics Using R,3,Autumn,2,optional
 Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Integrated Problem Solving,SCIU7SR,Statistics Using R,3,Autumn,3,optional
 Cell and Molecular Bioscience,Cell and Molecular Bioscience,,Systems Thinking,SCIU7SR,Statistics Using R,3,Autumn,3,optional
+Ecology and Conservation,Ecology and Conservation,,Systems Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
+Ecology and Conservation,Ecology and Conservation,,Adaptability,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
+Ecology and Conservation,Ecology and Conservation,,Self-Awareness,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
+Ecology and Conservation,Ecology and Conservation,,Innovation,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
+Ecology and Conservation,Ecology and Conservation,,Teamwork & Collaboration,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
+Ecology and Conservation,Ecology and Conservation,,Critical Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
+Ecology and Conservation,Ecology and Conservation,,Norms and Conflict Resolution,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
+Ecology and Conservation,Ecology and Conservation,,Integrated Problem Solving,ENVU9BC,Biodiversity Conservation and Management,3,Spring,3,compulsory
 Ecology and Conservation,Ecology and Conservation,,Critical Thinking,BIOU1IE,Ecology: An Introduction,1,Autumn,1,optional
 Ecology and Conservation,Ecology and Conservation,,Adaptability,BIOU1IE,Ecology: An Introduction,1,Autumn,1,optional
 Ecology and Conservation,Ecology and Conservation,,Integrated Problem Solving,BIOU1IE,Ecology: An Introduction,1,Autumn,1,optional
@@ -1456,13 +1523,6 @@ Ecology and Conservation,Ecology and Conservation,,Systems Thinking,BIOU8FC,Biol
 Ecology and Conservation,Ecology and Conservation,,Self-Awareness,BIOU8FC,Biology Field Course,4,Spring,2,optional
 Ecology and Conservation,Ecology and Conservation,,Innovation,BIOU8FC,Biology Field Course,4,Spring,3,optional
 Ecology and Conservation,Ecology and Conservation,,Teamwork & Collaboration,BIOU8FC,Biology Field Course,4,Spring,3,optional
-Ecology and Conservation,Ecology and Conservation,,Critical Thinking,BIOU9AP,Animal Physiology,3,Autumn,1,optional
-Ecology and Conservation,Ecology and Conservation,,Adaptability,BIOU9AP,Animal Physiology,3,Autumn,1,optional
-Ecology and Conservation,Ecology and Conservation,,Integrated Problem Solving,BIOU9AP,Animal Physiology,3,Autumn,1,optional
-Ecology and Conservation,Ecology and Conservation,,Systems Thinking,BIOU9AP,Animal Physiology,3,Autumn,1,optional
-Ecology and Conservation,Ecology and Conservation,,Teamwork & Collaboration,BIOU9AP,Animal Physiology,3,Autumn,1,optional
-Ecology and Conservation,Ecology and Conservation,,Innovation,BIOU9AP,Animal Physiology,3,Autumn,1,optional
-Ecology and Conservation,Ecology and Conservation,,Self-Awareness,BIOU9AP,Animal Physiology,3,Autumn,1,optional
 Ecology and Conservation,Ecology and Conservation,,Critical Thinking,BIOU9IN,Infectious Disease,3,Spring,1,optional
 Ecology and Conservation,Ecology and Conservation,,Adaptability,BIOU9IN,Infectious Disease,3,Spring,1,optional
 Ecology and Conservation,Ecology and Conservation,,Integrated Problem Solving,BIOU9IN,Infectious Disease,3,Spring,1,optional
@@ -1556,13 +1616,6 @@ Ecology and Conservation,Ecology and Conservation,,Self-Awareness,ENVU7CP,Conser
 Ecology and Conservation,Ecology and Conservation,,Innovation,ENVU7CP,Conservation Placement,4,Autumn,2,optional
 Ecology and Conservation,Ecology and Conservation,,Teamwork & Collaboration,ENVU7CP,Conservation Placement,4,Autumn,3,optional
 Ecology and Conservation,Ecology and Conservation,,Norms and Conflict Resolution,ENVU7CP,Conservation Placement,4,Autumn,2,optional
-Ecology and Conservation,Ecology and Conservation,,Critical Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,1,optional
-Ecology and Conservation,Ecology and Conservation,,Adaptability,ENVU9BC,Biodiversity Conservation and Management,3,Spring,1,optional
-Ecology and Conservation,Ecology and Conservation,,Integrated Problem Solving,ENVU9BC,Biodiversity Conservation and Management,3,Spring,1,optional
-Ecology and Conservation,Ecology and Conservation,,Systems Thinking,ENVU9BC,Biodiversity Conservation and Management,3,Spring,0,optional
-Ecology and Conservation,Ecology and Conservation,,Teamwork & Collaboration,ENVU9BC,Biodiversity Conservation and Management,3,Spring,1,optional
-Ecology and Conservation,Ecology and Conservation,,Innovation,ENVU9BC,Biodiversity Conservation and Management,3,Spring,1,optional
-Ecology and Conservation,Ecology and Conservation,,Self-Awareness,ENVU9BC,Biodiversity Conservation and Management,3,Spring,1,optional
 Ecology and Conservation,Ecology and Conservation,,Critical Thinking,ENVU9EO,Earth Observation,3,Spring,3,optional
 Ecology and Conservation,Ecology and Conservation,,Adaptability,ENVU9EO,Earth Observation,3,Spring,3,optional
 Ecology and Conservation,Ecology and Conservation,,Integrated Problem Solving,ENVU9EO,Earth Observation,3,Spring,3,optional

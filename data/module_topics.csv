@@ -22,16 +22,16 @@ BIOU8FC,Biology
 BIOU8FC,Conservation
 BIOU8FC,Ecology
 BIOU9AP,Biology
-BIOU9BC,Agriculture
-BIOU9BC,Aquaculture
-BIOU9BC,Biology
-BIOU9BC,Climate Science
-BIOU9BC,Conservation
-BIOU9BC,Ecology
-BIOU9BC,Energy
-BIOU9BC,Pollution
-BIOU9BC,Resource Exploitation
-BIOU9BC,Sustainability
+ENVU9BC,Agriculture
+ENVU9BC,Aquaculture
+ENVU9BC,Biology
+ENVU9BC,Climate Science
+ENVU9BC,Conservation
+ENVU9BC,Ecology
+ENVU9BC,Energy
+ENVU9BC,Pollution
+ENVU9BC,Resource Exploitation
+ENVU9BC,Sustainability
 BIOU9CP,Aquaculture
 BIOU9CP,Biology
 BIOU9PC,Biology
